@@ -27,8 +27,5 @@ services:
       - DB_PASSWORD=$POSTGRES_PASSWORD
       - DB_NAME=$POSTGRES_DB
       - DB_PORT=$POSTGRESDB_DOCKER_PORT
-    # develop:
-    #   watch:
-    #     - action: sync
-    #       path: ./ser_node/app
-    #       target: /node-app/app
+    volumes:
+      - $LOG_FILE_PATH/log:/node-app/app/log

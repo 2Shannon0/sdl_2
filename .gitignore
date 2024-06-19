@@ -5,3 +5,5 @@ pg_data/
 node_modules/
 *.dll
 *.exe
+.env
+logs/
